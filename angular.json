@@ -105,7 +105,38 @@
           }
         }
       }
+    },
+    "ng-jvx-cocktail-ui": {
+      "projectType": "library",
+      "root": "projects/ng-jvx-cocktail-ui",
+      "sourceRoot": "projects/ng-jvx-cocktail-ui/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ng-jvx-cocktail-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-jvx-cocktail-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-jvx-cocktail-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-jvx-cocktail-ui/src/test.ts",
+            "tsConfig": "projects/ng-jvx-cocktail-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-jvx-cocktail-ui/karma.conf.js"
+          }
+        }
+      }
     }
   },
-  "defaultProject": "ng-jvx-cocktail-ui-workspace"
+  "defaultProject": "ng-jvx-cocktail-ui"
 }

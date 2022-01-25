@@ -11,6 +11,12 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "ng-jvx-cocktail-ui": [
+        "dist/ng-jvx-cocktail-ui/ng-jvx-cocktail-ui",
+        "dist/ng-jvx-cocktail-ui"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
