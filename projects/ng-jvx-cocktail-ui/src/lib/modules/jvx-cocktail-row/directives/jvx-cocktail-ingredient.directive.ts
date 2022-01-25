@@ -14,6 +14,14 @@ export class JvxCocktailIngredientDirective {
     this.renderer.setStyle(this.el.nativeElement , 'width', val);
   }
 
+  set height(val: string) {
+    this.renderer.setStyle(this.el.nativeElement , 'height', val);
+  }
+
+  set marginTop(val: string) {
+    this.renderer.setStyle(this.el.nativeElement , 'margin-top', val);
+  }
+
   set marginRight(val: string) {
     this.renderer.setStyle(this.el.nativeElement , 'margin-right', val);
   }

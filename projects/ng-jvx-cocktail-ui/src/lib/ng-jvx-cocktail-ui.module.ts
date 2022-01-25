@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { NgJvxCocktailUiComponent } from './ng-jvx-cocktail-ui.component';
-import {JvxCocktailRowModule} from './modules/jvx-cocktail-row/jvx-cocktail-row.module';
+import {JvxCocktailElementsModule} from './modules/jvx-cocktail-row/jvx-cocktail-elements.module';
 
 
 
@@ -9,11 +9,11 @@ import {JvxCocktailRowModule} from './modules/jvx-cocktail-row/jvx-cocktail-row.
     NgJvxCocktailUiComponent
   ],
   imports: [
-    JvxCocktailRowModule
+    JvxCocktailElementsModule
   ],
   exports: [
     NgJvxCocktailUiComponent,
-    JvxCocktailRowModule
+    JvxCocktailElementsModule
   ]
 })
 export class NgJvxCocktailUiModule { }
