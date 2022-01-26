@@ -16,9 +16,13 @@ export class JvxCocktailColumnDirective implements AfterContentInit {
 
   ngAfterContentInit(): void {
     const totalParts = this.ingredients.map(i => i.parts).reduce((accumulator, value) => accumulator + value, 0);
+    let gapFactor = 1;
+    if(this.ingredients.length > 1){
+      gapFactor = (this.ingredients.length - 1) / this.ingredients.length;
+    }
     this.ingredients.forEach((ingredient, index) => {
       if(this.ingredients.length !== 1) {
-        ingredient.height = `calc(${((ingredient.parts * 100) / totalParts)}% - calc(${this.gap} / 2))`
+        ingredient.height = `calc(${((ingredient.parts * 100) / totalParts)}% - calc(${this.gap} * ${gapFactor}))`
         if (index === 0 || index === this.ingredients.length - 1) {
           if (index === this.ingredients.length - 1) {
             ingredient.marginTop = this.gap;
