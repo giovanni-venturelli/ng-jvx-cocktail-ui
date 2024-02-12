@@ -3,29 +3,34 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build ng-jvx-cocktail-ui",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "nx serve",
+    "build": "nx build ng-jvx-cocktail-ui",
+    "watch": "nx build --watch --configuration development",
+    "test": "nx test"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^16.0.3",
-    "@angular/common": "^16.0.3",
-    "@angular/compiler": "^16.0.3",
-    "@angular/core": "^16.0.3",
-    "@angular/forms": "^16.0.3",
-    "@angular/platform-browser": "^16.0.3",
-    "@angular/platform-browser-dynamic": "^16.0.3",
-    "@angular/router": "^16.0.3",
+    "@angular/animations": "~17.1.0",
+    "@angular/common": "~17.1.0",
+    "@angular/compiler": "~17.1.0",
+    "@angular/core": "~17.1.0",
+    "@angular/forms": "~17.1.0",
+    "@angular/platform-browser": "~17.1.0",
+    "@angular/platform-browser-dynamic": "~17.1.0",
+    "@angular/router": "~17.1.0",
     "rxjs": "^7.8.1",
     "tslib": "2.3.1",
-    "zone.js": "~0.13.0"
+    "zone.js": "~0.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.0.3",
-    "@angular/cli": "^16.0.3",
-    "@angular/compiler-cli": "^16.0.3",
+    "@angular-devkit/build-angular": "~17.1.0",
+    "@angular-devkit/core": "~17.1.0",
+    "@angular-devkit/schematics": "~17.1.0",
+    "@angular/cli": "~17.1.0",
+    "@angular/compiler-cli": "~17.1.0",
+    "@nx/angular": "18.0.4",
+    "@nx/workspace": "18.0.4",
+    "@schematics/angular": "^16.0.3",
     "@types/jasmine": "~3.10.0",
     "@types/node": "^20.2.4",
     "jasmine-core": "~3.10.0",
@@ -34,7 +39,9 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "ng-packagr": "^16.0.1",
+    "ng-packagr": "~17.1.0",
+    "nx": "18.0.4",
     "typescript": "^5.0.4"
   }
 }
+

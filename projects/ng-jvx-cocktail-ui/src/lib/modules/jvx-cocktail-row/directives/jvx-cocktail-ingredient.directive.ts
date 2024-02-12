@@ -1,7 +1,8 @@
 import {Directive, ElementRef, Input, Renderer2} from '@angular/core';
 
 @Directive({
-  selector: '[jvxCocktailIngredient]'
+  selector: '[jvxCocktailIngredient]',
+  standalone: true
 })
 export class JvxCocktailIngredientDirective {
   @Input() parts: number = 1;

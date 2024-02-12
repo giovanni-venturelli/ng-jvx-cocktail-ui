@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
       ng-jvx-cocktail-ui works!
     </p>
   `,
+  standalone: true,
   styles: [
   ]
 })

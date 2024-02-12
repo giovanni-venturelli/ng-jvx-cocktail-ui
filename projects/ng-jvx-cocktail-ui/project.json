@@ -1,0 +1,35 @@
+{
+  "name": "ng-jvx-cocktail-ui",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "projects/ng-jvx-cocktail-ui/src",
+  "prefix": "lib",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:ng-packagr",
+      "options": {
+        "project": "projects/ng-jvx-cocktail-ui/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "projects/ng-jvx-cocktail-ui/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "projects/ng-jvx-cocktail-ui/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production",
+      "outputs": [
+        "{workspaceRoot}/dist/ng-jvx-cocktail-ui"
+      ]
+    },
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "projects/ng-jvx-cocktail-ui/src/test.ts",
+        "tsConfig": "projects/ng-jvx-cocktail-ui/tsconfig.spec.json",
+        "karmaConfig": "projects/ng-jvx-cocktail-ui/karma.conf.js"
+      }
+    }
+  }
+}

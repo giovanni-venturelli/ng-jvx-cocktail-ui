@@ -1,9 +1,9 @@
 import {AfterContentInit, ContentChildren, Directive, ElementRef, Input, QueryList, Renderer2} from '@angular/core';
 import {JvxCocktailIngredientDirective} from './jvx-cocktail-ingredient.directive';
-import {timer} from 'rxjs';
 
 @Directive({
-  selector: '[jvxCocktailRow]'
+  selector: '[jvxCocktailRow]',
+  standalone: true
 })
 export class JvxCocktailRowDirective implements AfterContentInit {
   @ContentChildren(JvxCocktailIngredientDirective) ingredients!: QueryList<JvxCocktailIngredientDirective>;

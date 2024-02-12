@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import {NgJvxCocktailUiModule} from '../../projects/ng-jvx-cocktail-ui/src/public-api';
+import {JvxCocktailColumnDirective, JvxCocktailIngredientDirective, JvxCocktailRowDirective} from '../../projects/ng-jvx-cocktail-ui/src';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,9 @@ import {NgJvxCocktailUiModule} from '../../projects/ng-jvx-cocktail-ui/src/publi
   ],
   imports: [
     BrowserModule,
-    NgJvxCocktailUiModule
+    JvxCocktailColumnDirective,
+    JvxCocktailIngredientDirective,
+    JvxCocktailRowDirective
   ],
   providers: [],
   bootstrap: [AppComponent]
