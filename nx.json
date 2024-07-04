@@ -20,9 +20,6 @@
       ]
     }
   },
-  "affected": {
-    "defaultBase": "main"
-  },
   "namedInputs": {
     "sharedGlobals": [],
     "default": [
@@ -35,5 +32,6 @@
       "!{projectRoot}/**/*.spec.[jt]s",
       "!{projectRoot}/karma.conf.js"
     ]
-  }
+  },
+  "defaultBase": "main"
 }

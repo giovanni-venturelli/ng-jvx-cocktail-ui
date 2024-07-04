@@ -1,9 +1,9 @@
 {
   "name": "@digitronica/ng-jvx-cocktail-ui",
-  "version": "17.0.0",
-  "peerDependencies": {
-    "@angular/common": "^17.1.0",
-    "@angular/core": "^17.1.0"
+  "version": "18.0.0",
+  "peerDependencies": {"@angular/animations": "18.0.5",
+    "@angular/common": "^18.0.5",
+    "@angular/core": "^18.0.5"
   },
   "publishConfig": {
     "registry": "http://vm-web2016.digitronicait.local:8888"
