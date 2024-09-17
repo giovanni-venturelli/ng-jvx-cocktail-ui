@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "nx serve",
     "build": "nx build ng-jvx-cocktail-ui",
+    "postbuild": "copy .npmrc dist\\ng-jvx-cocktail-ui\\",
     "watch": "nx build --watch --configuration development",
     "test": "nx test"
   },
