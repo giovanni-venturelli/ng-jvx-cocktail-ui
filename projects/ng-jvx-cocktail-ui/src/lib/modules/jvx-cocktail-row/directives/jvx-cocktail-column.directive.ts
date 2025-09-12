@@ -2,8 +2,7 @@ import {AfterContentInit, ContentChildren, Directive, ElementRef, Input, QueryLi
 import {JvxCocktailIngredientDirective} from './jvx-cocktail-ingredient.directive';
 
 @Directive({
-  selector: '[jvxCocktailColumn]',
-  standalone: true
+  selector: '[jvxCocktailColumn]'
 })
 export class JvxCocktailColumnDirective implements AfterContentInit {
   @ContentChildren(JvxCocktailIngredientDirective) ingredients!: QueryList<JvxCocktailIngredientDirective>;

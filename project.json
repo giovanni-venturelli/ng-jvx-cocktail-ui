@@ -71,10 +71,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "browserTarget": "ng-jvx-cocktail-ui-workspace:build:production"
+          "buildTarget": "ng-jvx-cocktail-ui-workspace:build:production"
         },
         "development": {
-          "browserTarget": "ng-jvx-cocktail-ui-workspace:build:development"
+          "buildTarget": "ng-jvx-cocktail-ui-workspace:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "ng-jvx-cocktail-ui-workspace:build"
+        "buildTarget": "ng-jvx-cocktail-ui-workspace:build"
       }
     },
     "test": {

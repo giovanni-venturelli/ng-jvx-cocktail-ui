@@ -1,9 +1,9 @@
 {
   "name": "@digitronica/ng-jvx-cocktail-ui",
-  "version": "18.0.3",
-  "peerDependencies": {"@angular/animations": "^18.0.5",
-    "@angular/common": "^18.0.5",
-    "@angular/core": "^18.0.5"
+  "version": "20.0.0",
+  "peerDependencies": {"@angular/animations": "^20.0.0",
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0"
   },
   "publishConfig": {
     "registry": "http://vm-devops/Frontend/_packaging/digitronica_feed/npm/registry/"
